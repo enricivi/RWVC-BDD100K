@@ -2,13 +2,13 @@
 Currently under review
 
 ## Dataset
-BDD100K \[1\] is a large scale driving video dataset, which comprises different scenes types, such as city, street, residential areas and highways. Moreover, it has been captured under various weather conditions and time of the day.
+BDD100K [\[1\]](https://github.com/enry12/RWVC-BDD100K#main-references) is a large scale driving video dataset, which comprises different scenes types, such as city, street, residential areas and highways. Moreover, it has been captured under various weather conditions and time of the day.
 The dataset contains 100K videos, each of which has been annotated at the 10-th frame, resulting in a total of 100K images manually annotated for a number of different tasks, including object detection or image segmentation.
-Each annotated image includes a label about the atmospheric weather condition (snowy, rainy, clear), but it does not identify the actual road  weather status (snow, wet, dry); many images marked as rainy or snowy do not show wet or snowy road, as reported by \[2\]. Furthermore, BDD100K does not provide any label on general visibility. Thus, we selected a subset of 13.3K images captured at different times of the day and we manually annotated them. We refer to this subset of BDD100K as the RWVC-BDD dataset.
+Each annotated image includes a label about the atmospheric weather condition (snowy, rainy, clear), but it does not identify the actual road  weather status (snow, wet, dry); many images marked as rainy or snowy do not show wet or snowy road, as reported by [\[2\]](https://github.com/enry12/RWVC-BDD100K#main-references). Furthermore, BDD100K does not provide any label on general visibility. Thus, we selected a subset of 13.3K images captured at different times of the day and we manually annotated them. We refer to this subset of BDD100K as the RWVC-BDD dataset.
 
 The selected images are split into training (8.8K images), validation (2.5K) and test (2K). On each slice we keep roughly the same distribution of road, visibility, weather and time of the day annotations.
 
-We describe in detail the annotations in the following subsections, while in the histograms below we report the distributions of the different annotations of the RWVC-BDD dataset.
+We describe in detail the annotations in the following subsections, while in the [histograms](https://github.com/enry12/RWVC-BDD100K#histograms) below we report the distributions of the different annotations of the RWVC-BDD dataset.
 
 ### Road condition
 We identify three different categories for road condition: *wet*, *dry* and *snowy*. *Dry* label identifies a totally dry road. *Wet* and *snowy* labels denote a drivable area, which is partially or totally characterized by the presence of water or ice/snow respectively. In case both water and snow are present in the drivable area, we decided to annotate the road as *snowy*.
